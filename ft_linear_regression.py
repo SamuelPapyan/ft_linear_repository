@@ -28,7 +28,7 @@ def model(X, theta):
     return F
 
 def cost_function(m, X, Y, theta):
-    J = (1 / (2 * m)) * np.sum((model(X, theta) - Y) ** 2)
+    J = (1 / 2 * m) * np.sum((model(X, theta) - Y) ** 2)
     return J
 
 def gradient_descent(X, Y, theta, learning_rate, n_iterations):
