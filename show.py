@@ -22,6 +22,9 @@ def thetas_values(theta0, theta1):
 def prediction_curve(x, Y, prediction):
     plt.scatter(x, Y, marker='+')
     plt.plot(x, prediction, c='r')
+    plt.title("Prediction curve")
+    plt.xlabel("km")
+    plt.ylabel("price")
     plt.legend(['prediction curve: f(x)=ax+b'])
     plt.show()
 
